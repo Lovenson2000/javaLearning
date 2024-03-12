@@ -26,8 +26,6 @@ public class BinarySearch {
     public static void main(String[] args) {
 
         int[] numbers = { 23, 12, 98, 6, 3, 13, 8, 34, 87 };
-
-        // Sort the array
         Arrays.sort(numbers);
 
         int target = 8;
