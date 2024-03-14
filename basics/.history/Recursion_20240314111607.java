@@ -24,7 +24,5 @@ public class Recursion {
         Recursion recursion = new Recursion();
         int result = recursion.calculateFactorial(10);
         System.out.println(result);
-
-        System.out.println(sumOfSubsequentNumbers(10));
     }
 }
