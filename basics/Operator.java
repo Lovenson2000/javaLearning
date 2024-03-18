@@ -11,6 +11,7 @@ public class Operator {
 
         int a = 5; // binary: 0101
         int b = 3; // binary: 0011
+
         int andResult = a & b;
         int orResult = a | b;
         int xorResult = a ^ b;
