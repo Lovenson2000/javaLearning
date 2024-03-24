@@ -1,3 +1,5 @@
+package ObjectOrientedProgramming;
+
 class Point {
 
     public double x, y;
