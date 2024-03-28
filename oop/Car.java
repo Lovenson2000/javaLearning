@@ -1,10 +1,7 @@
-package ObjectOrientedProgramming;
+package oop;
 
 import java.time.Year;
 
-/**
- * Car
- */
 public class Car {
 
     public String brand;
@@ -41,7 +38,6 @@ public class Car {
         } else {
             System.out.println("This car is getting old");
         }
-
     }
 
     public static void main(String[] args) {
