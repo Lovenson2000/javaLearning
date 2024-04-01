@@ -1,3 +1,5 @@
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class Main {
 
@@ -41,6 +43,29 @@ public class Main {
         System.out.println("FRIEND".equalsIgnoreCase("friend")); // true
         System.out.println("Blatter".contains("ter")); // true
 
+        // Working with String Buffer
+        StringBuffer someText = new StringBuffer("Some text");
+        StringBuffer anotherText = new StringBuffer("some Text");
+        System.out.println(someText.length());
+        System.out.println(someText.capacity());
+        System.out.println(someText.compareTo(anotherText));
+
+        someText.delete(0, someText.length()); // deleting everything
+        someText.ensureCapacity(40);
+        someText.append("Some newly added text");
+        System.out.println(someText);
+        System.out.println(someText.length());
+
+        StringBuffer username = new StringBuffer("Blatter");
+        String nameChars = username.chars()
+                .mapToObj(c -> (char) c)
+                .map(Object::toString)
+                .collect(Collectors.joining(" "));
+
+        System.out.println(nameChars); // B l a t t e r
+
+        String stringChars = String.join(" ", username.toString().split(""));
+        System.out.println(stringChars); // B l a t t e r
     }
 
 }

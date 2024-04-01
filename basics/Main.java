@@ -40,11 +40,11 @@ public class Main {
 
         Main example = new Main();
 
-        Instant LINEAR_SEARCH_START_TIME = Instant.now();
-        System.out.println("Index found by linear search: " + example.linearSearch(numbers, 55));
-        Instant LINEAR_SEARCH_END_TIME = Instant.now();
-        Duration LINEAR_SEARCH_EXECUTION_TIME = Duration.between(LINEAR_SEARCH_START_TIME, LINEAR_SEARCH_END_TIME);
-        System.out.println("Linear search execution time: " + LINEAR_SEARCH_EXECUTION_TIME.toNanos() + " nanoseconds");
+        // Instant LINEAR_SEARCH_START_TIME = Instant.now();
+        // System.out.println("Index found by linear search: " + example.linearSearch(numbers, 55));
+        // Instant LINEAR_SEARCH_END_TIME = Instant.now();
+        // Duration LINEAR_SEARCH_EXECUTION_TIME = Duration.between(LINEAR_SEARCH_START_TIME, LINEAR_SEARCH_END_TIME);
+        // System.out.println("Linear search execution time: " + LINEAR_SEARCH_EXECUTION_TIME.toNanos() + " nanoseconds");
 
         Instant BINARY_SEARCH_START_TIME = Instant.now();
         System.out.println("Index found by binary search: " + example.binarySearch(numbers, 55));

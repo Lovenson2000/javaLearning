@@ -9,7 +9,7 @@ public class Car {
     public int yearOfProduction;
     public String madeInCountry;
     public double price;
-    static int wheels = 4;
+    static int wheels = 4; // Shared accross all instances
 
     public Car(double price) {
         this.price = price;
@@ -24,7 +24,7 @@ public class Car {
     }
 
     public void printCarInformation() {
-        System.out.println("This car is a " + brand + ", made in " + yearOfProduction);
+        System.out.println("This car has " + wheels + " and is a " + brand + ", made in " + yearOfProduction);
         System.out.println("It was made in " + madeInCountry + " and its maximum speed is: " + speed + "km/h");
 
         if (isExpensive()) {
@@ -45,10 +45,19 @@ public class Car {
         Car myCar = new Car(17532);
         myCar.brand = "Tesla";
         myCar.speed = 53;
-        myCar.madeInCountry = "Japan";
+        myCar.madeInCountry = "US";
         myCar.yearOfProduction = 2019;
+        Car.wheels = 6;
+
+        Car secondCar = new Car(24127);
+        secondCar.brand = "Toyota";
+        secondCar.speed = 45;
+        secondCar.madeInCountry = "Japan";
+        secondCar.yearOfProduction = 2013;
 
         myCar.printCarInformation();
+        System.out.println();
+        secondCar.printCarInformation();
 
     }
 }
