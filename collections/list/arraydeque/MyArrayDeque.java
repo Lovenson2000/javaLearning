@@ -8,7 +8,7 @@ import java.util.Collections;
 
 public class MyArrayDeque {
 
-    // Implemtning some generic custom ArrayDeque Methods
+    // Implementing some generic custom ArrayDeque Methods
     static <T> ArrayDeque<T> clone(ArrayDeque<T> arrayDeque) {
         ArrayDeque<T> cloneArrayDeque = new ArrayDeque<>();
         arrayDeque.forEach(cloneArrayDeque::add);
